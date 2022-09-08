@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>5_lesson</title>
+
+</head>
+<body>
+    <script type = "text/javascript">   
+        var ex = parseInt(prompt("Insert a number"));
+        alert("Вы ввели номер упражнения: " + ex)
+        if (ex==1) {
+        alert("Result: y = x*x + 2*x- 1 =" + "\n" + ex_num_1());
+        }
+        function ex_num_1  () {
+            var x = parseInt(prompt("Insert a number"));
+            var y = x*x + 2*x- 1;
+            return  y; 
+        } 
+
+
+            if (ex==2){
+                alert("Result: " + "\n" + ex_num_2());
+            }
+
+            function ex_num_2(){
+                var a = parseInt(prompt("Insert a number"));
+                var b = parseInt(prompt("Insert a number"));
+                if (a%b==0) {
+                alert ("Divisible");
+            }else{
+                alert("Not Divisible");
+                }
+             }
+
+
+                if (ex==3){
+                alert("Result:  " + "\n" + ex_num_3()); 
+            }
+                function ex_num_3(){
+                    let name = prompt("Insert a Name: ");
+                    let surname = prompt("Insert a Surname: ");
+                    let city = prompt("Insert a City: ");
+                    let age = prompt("Insert Age: ");
+                    return "Name: " + name + "\n" +
+                           "Surname: " + surname + "\n" +
+                            "City: " + city + "\n" +
+                            "Age: " + age
+                }
+
+                    if (ex==4){
+                    alert("Result:  " + "\n" + ex_num_4());
+                    }
+                    function ex_num_4(){
+                        var a = parseInt(prompt("Insert a number"));
+                        var b = parseInt(prompt("Insert b number"));
+                        var c = parseInt(prompt("Insert c number"));
+                        var sum = a+b+c;
+                        var diff = a-b-c;
+                        var prod = a*b*c;
+                        alert("a + b + c = " + sum +
+                              "\na - b - c = " + diff +  
+                              "\na * b * c = " + prod);
+                    }
+
+
+                    if (ex==5){
+                    alert("Result: " + "\n" + ex_num_5());
+                    }
+
+                    function ex_num_5(){
+                        var n = parseInt(prompt("Insert n number"));
+                        var k = parseInt(prompt("Insert k number"));
+                        var x = ~~(k/n);
+                        return x;
+                    }
+
+
+                        if (ex==6){
+                        alert("Result: " + "\n" + ex_num_6());
+                        }
+
+                        function ex_num_6(){
+                            var a = parseInt(prompt("Insert a number"));
+                            var b = parseInt(prompt("Insert b number"));
+                            var c = a*a+b*b;
+                        alert(Math.sqrt(c));
+                        }
+
+
+                    if (ex==7){
+                    alert("Result: " + "\n" + ex_num_7());
+                    }
+
+                    function ex_num_7(){
+                        var speed = parseInt(prompt("Insert a speed number"));
+                        var dist = parseInt(prompt("Insert a dist number"));
+                        var time = dist/speed
+                        if (time<=2.25) {
+                    alert ("YES, YOU CAN REACH");
+                }else{
+                    alert("NO, YOU CAN NOT REACH");
+                    }
+                 }
+
+
+                if (ex==8){
+                alert("Result: " + "\n" + ex_num_8());
+                }
+
+                function ex_num_8(){
+                var pcs = parseInt(prompt("Insert a pcs number"));
+                var whiskas = 120;
+                var sum1 = pcs*whiskas
+                var tenper = sum1*0.1
+                    if (sum1>4000) {
+                    alert (sum1 - tenper);
+            }else{
+                    alert(sum1);
+                }
+             }
+
+
+        if (ex==9){
+        alert("Result: " + "\n" + ex_num_9());
+        }
+        function ex_num_9(){
+        var tenge = parseInt(prompt("Enter quantity"));
+        var number = parseInt(prompt("INSERT YOUR AMOUNT IN KZT:" +
+                                     "\n1- CONVERT TO USD;" +  
+                                     "\n2- CONVERT TO EUR;" + 
+                                     "\n3- CONVERT TO GBP;"));
+        var usd = tenge/380;
+        var eur = tenge/430;
+        var gbp = tenge/480;
+
+        if (number==1){
+        alert (tenge + "KZT = " + usd.toFixed(2) + " USD");
+    }else if (number==2){
+        alert(tenge + "KZT = " + eur.toFixed(2) + " EUR");
+    }else if (number==3){
+        alert(tenge + "KZT = " + gbp.toFixed(2) + " GBP");
+        } 
+    }
+
+
+            if (ex==10){
+            alert("Result: " + "\n" + ex_num_10());
+        }
+
+            function ex_num_10(){
+            let a = prompt("Insert a user");
+            let b = prompt("Insert a qwerty");
+        
+            if (a=="user" && b=="qwerty"){
+            alert("Authentication completed");
+        }else{
+            alert("Invalid login or password");
+        }
+    }
+
+                if (ex==11){
+                alert("Result: " + "\n" + ex_num_11());
+                }
+
+                function ex_num_11(){
+                var a = parseInt(prompt("Insert year"));
+                if ((a%4==0 && a%100!=0) || a%400 == 0){
+                alert("YES");
+            }else{
+                alert("NO");
+            }
+        }
+
+                    if (ex==12){
+                        alert("Result: " + "\n" + ex_num_12());
+                    }
+                        function ex_num_12(){
+                        var points = parseInt(prompt("Insert points"));
+                        if (points>=90){
+                        alert ("A");
+                    }else if (points>=75){
+                        alert("B");
+                    }else if (points>=60){
+                        alert("C");
+                    }else if (points>=50){
+                        alert("D"); 
+                    }else{
+                        alert("F");
+                    }
+                }
+
+
+                        if (ex==13){
+                            alert("Result: " + "\n" + ex_num_13());
+                        }
+                            function ex_num_13(){
+                            var number = parseInt(prompt("Choose your branch:" +
+                                                         "\n1 - Science;" +  
+                                                         "\n2 - Humanitarian subjects;" + 
+                                                         "\n3 - Art;" +
+                                                         "\n4 - Sport;"));
+
+                                if (number==1){
+                                number = prompt("1 - Math, 2 - Physics:");
+                                if (number==1) alert("You are Financier");
+                                else if (number==2) alert("You are Engineer");
+
+
+                                    }else if (number==2){ 
+                                        number = prompt("1 - History, 2 - Foreign Languages:");
+                                        if (number==1) alert("You are Historic or Diplomat");
+                                        else if (number==2) alert("You are Translator");
+
+                            
+                                }else if (number==3){
+                                    number = prompt("1 - Drawing, 2 -Singing:");
+                                    if (number==1) alert("You are Painter or Architect");
+                                    else if (number==2) alert("You are Singer or Tamada");
+
+
+                        }else if(number==4){
+                            alert("1 - Team, 2 - Individual:");
+                            number = prompt("1 - Team, 2 - Individual:");
+                            if (number==1) alert("You are footballer or Basketball player");
+                            else if (number==2) alert("You are boxer or tennis player");
+                            } 
+                        }
+
+
+
+                    if (ex==14){
+                    alert("Result: " + "\n" + ex_num_14());
+                    }
+
+                    function ex_num_14(){
+                    var a = parseInt(prompt("Insert a number"));
+                    var b = parseInt(prompt("Insert b number"));
+                    var c = parseInt(prompt("Insert c number"));
+
+                     if (a+b>c && a+c>b && b+c>a){
+                     alert("YES");
+                  }else{
+                     alert("NO");
+                     }
+                  }
+
+
+            if (ex==15){
+            alert("Result: " + "\n" + ex_num_15());
+        }
+            function ex_num_15(){
+            var tenge = parseInt(prompt("Enter quantity"));
+            var usd = tenge/380;
+
+            if (tenge%380==0){
+            alert ("ONLY " + usd + " USD");
+        }else if (tenge%380!=0){
+            alert(parseInt(usd) + " USD and " + parseInt((usd.toFixed(2)-parseInt(usd))*100) + " cents"); 
+        } 
+    }
+
+
+        if (ex==16){
+        alert("Result: " + "\n" + ex_num_16());
+    }
+        function ex_num_16(){
+        var x = parseInt(prompt("Enter minutes"));
+        var minutes = 60;
+        var hour = x/minutes;
+
+        if (x%minutes==0){
+        alert ("ONLY " + hour + " HOURS");
+    }else if (x%minutes!=0){
+        alert(parseInt(hour) + " HOURS and " + (x-(parseInt(hour)*60)) + " MINUTES"); 
+    } 
+}
+
+    </script>
+
+</body>
+</html>
